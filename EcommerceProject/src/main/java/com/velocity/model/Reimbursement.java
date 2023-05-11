@@ -18,6 +18,7 @@ public class Reimbursement {
 	private String submitDate;
 	private String type;
 	private String status;
+	
 	public int getReimbursementId() {
 		return reimbursementId;
 	}
