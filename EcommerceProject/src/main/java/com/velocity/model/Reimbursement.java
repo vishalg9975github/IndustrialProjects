@@ -62,6 +62,11 @@ public class Reimbursement {
 		this.type = type;
 		this.status = status;
 	}
+	@Override
+	public String toString() {
+		return "Reimbursement [reimbursementId=" + reimbursementId + ", emplId=" + emplId + ", amount=" + amount
+				+ ", submitDate=" + submitDate + ", type=" + type + ", status=" + status + "]";
+	}
 	
 	
 	
