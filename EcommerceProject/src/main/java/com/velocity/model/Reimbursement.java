@@ -18,6 +18,7 @@ public class Reimbursement {
 	private String submitDate;
 	private String type;
 	private String status;
+	
 	public int getReimbursementId() {
 		return reimbursementId;
 	}
@@ -61,6 +62,11 @@ public class Reimbursement {
 		this.submitDate = submitDate;
 		this.type = type;
 		this.status = status;
+	}
+	@Override
+	public String toString() {
+		return "Reimbursement [reimbursementId=" + reimbursementId + ", emplId=" + emplId + ", amount=" + amount
+				+ ", submitDate=" + submitDate + ", type=" + type + ", status=" + status + "]";
 	}
 	
 	
