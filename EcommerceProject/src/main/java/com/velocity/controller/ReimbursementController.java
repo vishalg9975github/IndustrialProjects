@@ -25,22 +25,17 @@ public class ReimbursementController {
 		Reimbursement reimbursement2=reimbursementService.saveReimbursement(reimbursement);
 		return reimbursement2;
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> eda9ac4b3ad152805826954ae780c1de790c97ee
 	@PutMapping("/updateReimbursement")
 	public Reimbursement updateReimbursement(@RequestBody Reimbursement reimbursement) {
 		return reimbursementService.updateReimbursement(reimbursement);
 	}
-<<<<<<< HEAD
-=======
-	
+
 	@GetMapping("/getReimbursement")
 	public Reimbursement getReimbursement() {
 		return reimbursementService.getReimbursement();
 	}
->>>>>>> eda9ac4b3ad152805826954ae780c1de790c97ee
+
 	
 	@GetMapping("/getReimbursement")
 	public List<Reimbursement> getReimbursement() {
