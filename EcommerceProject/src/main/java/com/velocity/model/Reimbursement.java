@@ -55,14 +55,14 @@ public class Reimbursement {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Reimbursement(int reimbursementId, double amount, String submitDate, String type, String status) {
-		super();
-		this.reimbursementId = reimbursementId;
-		this.amount = amount;
-		this.submitDate = submitDate;
-		this.type = type;
-		this.status = status;
-	}
+//	public Reimbursement(int reimbursementId, double amount, String submitDate, String type, String status) {
+//		super();
+//		this.reimbursementId = reimbursementId;
+//		this.amount = amount;
+//		this.submitDate = submitDate;
+//		this.type = type;
+//		this.status = status;
+//	}
 	@Override
 	public String toString() {
 		return "Reimbursement [reimbursementId=" + reimbursementId + ", emplId=" + emplId + ", amount=" + amount
