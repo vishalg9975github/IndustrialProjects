@@ -1,11 +1,8 @@
 package com.velocity.service.impl;
 
-<<<<<<< HEAD
-import java.util.List;
-=======
-import java.util.Optional;
->>>>>>> eda9ac4b3ad152805826954ae780c1de790c97ee
 
+import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -65,15 +62,6 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		
 		return reimbursementRepository.save(reimbursement2);
 		
-	}
-
-
-	
-
-	
-
-	
-
-	
+	}	
 
 }
