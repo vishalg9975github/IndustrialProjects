@@ -1,6 +1,10 @@
 package com.velocity.service.impl;
 
+<<<<<<< HEAD
 import java.util.List;
+=======
+import java.util.Optional;
+>>>>>>> eda9ac4b3ad152805826954ae780c1de790c97ee
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,5 +46,34 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		return reimbursementRepository.save(reimbursement2);
 		
 	}
+
+	@Override
+	public Reimbursement getReimbursement() {
+		Reimbursement reimbursement=(Reimbursement) reimbursementRepository.findAll();
+		return reimbursement;
+	}
+
+	@Override
+	public Reimbursement updateReimbursement(Reimbursement reimbursement) {
+		int reimbursementId =reimbursement.getReimbursementId();
+		Reimbursement reimbursement2=reimbursementRepository.findById(reimbursementId).get();
+		reimbursement2.setAmount(reimbursement.getAmount());
+		reimbursement2.setEmplId(reimbursement.getEmplId());
+		reimbursement2.setStatus(reimbursement.getStatus());
+		reimbursement2.setSubmitDate(reimbursement.getSubmitDate());
+		reimbursement2.setType(reimbursement.getType());
+		
+		return reimbursementRepository.save(reimbursement2);
+		
+	}
+
+
+	
+
+	
+
+	
+
+	
 
 }
